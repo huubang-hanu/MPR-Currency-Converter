@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string-array name="money_convert">
+        <item>VND to USD</item>
+        <item>USD to VND</item>
+        <item>VND to EUR</item>
+        <item>EUR to VND</item>
+    </string-array>
+</resources>

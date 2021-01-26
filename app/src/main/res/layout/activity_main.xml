@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTxtMoney"
+        android:layout_width="259dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="Enter your money: "
+        android:textColor="#101010"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#56C5C2"
+        android:text="Convert"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtMoney"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtMoney" />
+
+    <Spinner
+        android:id="@+id/spinnerMoney"
+        android:layout_width="159dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/money_convert"
+        app:layout_constraintStart_toStartOf="@+id/editTxtMoney"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtMoney" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Version 1.0"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Result: "
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/spinnerMoney"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMoney" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="410dp"
+        android:layout_height="197dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/moneyy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResult" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
